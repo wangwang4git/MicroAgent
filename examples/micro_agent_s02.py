@@ -14,6 +14,7 @@ MODEL = "qwen3:latest"
 SYSTEM = (
     f"You are a coding agent at {WORKDIR}."
     "Use tools to solve tasks. Act, don't explain."
+    "Using Chinese for communication."
 )
 
 
