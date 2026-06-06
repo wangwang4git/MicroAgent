@@ -55,6 +55,7 @@ def run_bash(command: str) -> str:
     output = (result.stdout + result.stderr).strip()
     return output[:50000] if output else "(no output)"
 
+
 def extract_text(content) -> str:
     if not isinstance(content, list):
         return ""
@@ -121,6 +122,7 @@ def agent_loop(state: LoopState) -> None:
         pass
 
 
+# usage：列出当前目录的文件
 if __name__ == "__main__":
     history = []
     while True:
